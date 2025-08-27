@@ -1,0 +1,41 @@
+site_name: My Docs
+site_url: ""
+site_description: Dự án học tập cá nhân
+site_author: Lưu Thế Vinh
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - toc.integrate
+
+nav:
+  - Trang Chủ: index.md
+  - Giới Thiệu: about.md
+  - Hướng Dẫn:
+      - Cài Đặt: installation.md
+      - Sử Dụng: usage.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-username/your-repo-name
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/your-username
+
+plugins:
+  - search
