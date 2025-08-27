@@ -1,5 +1,5 @@
 site_name: My Docs
-site_url: ""
+site_url: https://thevinhluu.github.io/mkdocs
 site_description: Dự án học tập cá nhân
 site_author: Lưu Thế Vinh
 
@@ -13,10 +13,21 @@ theme:
 
 nav:
   - Trang Chủ: index.md
-  - Giới Thiệu: about.md
-  - Hướng Dẫn:
-      - Cài Đặt: installation.md
-      - Sử Dụng: usage.md
+  - API and Web Development: api_and_web.md
+  - Database and Storage: database_and_storage.md
+  - Caching & Performance: caching_and_performance.md
+  - Software Architecture: software_architecture.md
+  - Software Development: software_development.md
+  - DevTools & Productivity: devtools_productivity.md
+  - Cloud & Distributed Systems: cloud_distributed.md
+  - DevOps and CI/CD: devops_cicd.md
+  - Security: security.md
+  - Computer Fundamentals: computer_fundamentals.md
+  - Real World Case Studies: real_world_case_studies.md
+  - AI và Machine Learning: ai_machine_learning.md
+  - Technical Interviews: technical_interviews.md
+  - Payment và Fintech: payment_fintech.md
+  - How it Works?: how_it_works.md
 
 markdown_extensions:
   - admonition
@@ -33,9 +44,9 @@ markdown_extensions:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/your-username/your-repo-name
+      link: https://github.com/thevinhluu/mkdocs
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/your-username
+      link: ""
 
 plugins:
   - search
