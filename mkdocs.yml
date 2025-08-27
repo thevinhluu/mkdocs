@@ -1,19 +1,32 @@
-site_name: My Docs
+site_name: Luu The Vinh Docs
 site_url: https://thevinhluu.github.io/mkdocs
 site_description: Dự án học tập cá nhân
 site_author: Lưu Thế Vinh
 
 theme:
   name: material
-  features:
-    - navigation.sections
-    - navigation.top
-    - search.suggest
-    - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 nav:
   - Trang Chủ: index.md
-  - API and Web Development: api_and_web.md
+  - API and Web Development:
+      - Giới thiệu: api_and_web/index.md
+      - HTTP: api_and_web/http.md
+      - REST API: api_and_web/rest_api_cheatsheet.md
+      - gRPC: api_and_web/grpc.md
+      - WebSockets: api_and_web/websockets.md
   - Database and Storage: database_and_storage.md
   - Caching & Performance: caching_and_performance.md
   - Software Architecture: software_architecture.md
@@ -45,8 +58,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/thevinhluu/mkdocs
-    - icon: fontawesome/brands/twitter
-      link: ""
+    - icon: fontawesome/brands/facebook
+      link: "https://www.facebook.com/luuthevinh105/"
 
 plugins:
   - search
